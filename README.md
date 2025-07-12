@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Blog Summarizer
 
-## Getting Started
+A web app that uses OpenAI's GPT model to summarize long blog posts into concise summaries. Built with **Next.js**, styled using **Tailwind CSS**, and powered by the **OpenAI API**.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Features
+
+- 📋 Paste any blog or article text
+- ⚡ One-click summary using GPT-3.5
+- 💾 Optional MongoDB integration (for saving summaries)
+- 🎨 Clean and responsive UI with gradient background
+
+---
+
+## 🛠 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [OpenAI API](https://platform.openai.com/)
+- (Optional) MongoDB with Mongoose
+
+---
+
+## 📦 Installation
+
+### 1. Clone the repo
+
+git clone https://github.com/your-username/blog-summarizer.git
+cd blog-summarizer
+
+### 2. Install dependencies
+npm install
+
+### 3. Set up environment variables
+Create a .env.local file in the root:
+OPENAI_API_KEY=your-openai-api-key-here
+
+### 4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Example Prompt
+Paste this to test:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Artificial intelligence, blockchain, and remote work tools are shaping the future. Companies that adapt to these trends will thrive...
 
-## Learn More
+### Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
+blog-summarizer/
+├── pages/
+│   ├── api/
+│   │   └── summarize.js
+│   └── index.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+├── styles/
+│   └── globals.css
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+├── public/
+│   └── (any images like screenshot.png)
 
-## Deploy on Vercel
+├── .env.local
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+├── package.json
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+├── tailwind.config.js
+
+├── postcss.confi
+
+├─ .env.local
+
+├─ package.json
